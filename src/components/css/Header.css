@@ -1,0 +1,8 @@
+.cabecalho {
+    background-color: #A221AD;
+    background-image: linear-gradient(#E92FFA, #bb25c9, #A221AD, #A221AD, #5B1261);
+}
+
+.cabecalho__titulo {
+    padding: 0.5em;
+}

@@ -1,0 +1,48 @@
+@import url(reset.css);
+@import url(cabecalho.css);
+@import url(rodape.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&display=swap');
+
+:root{
+    --fonte: 'Roboto Slab', serif;
+    --fonte-peso-titulo: 800;
+    --fonte-peso-subtitulo: 600;
+    --fonte-peso-texto: 400;
+    --fonte-tamanho-titulo: 2rem;
+    --fonte-tamanho-subtitulo: 1.5rem;
+    --fonte-tamanho-texto: 1rem;
+
+    /*cor*/
+    --cor-fundo: #f0ead6;
+    --cor-link-hover: #f0ead6;
+    --cor-fonte: #080b38;
+    --cor: #5B1261;
+}
+
+main{
+    background-color: var(--cor-fundo);
+}
+
+.titulo{
+    font-family: var(--fonte);
+    font-weight: var(--fonte-peso-titulo);
+    font-size: var(--fonte-tamanho-titulo);
+}
+
+.subtitulo{
+    font-family: var(--fonte);
+    font-weight: var(--fonte-peso-subtitulo);
+    font-size: var(--fonte-tamanho-subtitulo);
+}
+
+.texto{
+    font-family: var(--fonte);
+    font-weight: var(--fonte-peso-texto);
+    font-size: var(--fonte-tamanho-texto);
+}
+
+.titulo, .texto,
+.subtitulo {
+    color: var(--cor-fonte);
+}

@@ -1,0 +1,15 @@
+.rodape--container {
+    text-align: center;
+    background-color: #A221AD;
+    background-image: linear-gradient(#E92FFA, #bb25c9, #A221AD, #A221AD, #5B1261);
+    padding: 1em;
+}
+
+.rodape__texto{
+    padding: 0.25em;
+}
+
+.rodape--link:hover {
+    text-shadow: 1px 1px var(--cor-link-hover-sombra);
+    color: var(--cor-link-hover-fonte);
+}
