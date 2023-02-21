@@ -98,10 +98,12 @@ select {
 
     /*cor*/
     --cor-fundo: #f0ead6;
-    --cor-link-hover-sombra: #f0ead6;
+    --cor-hover-sombra: #f0ead6;
+	--cor-fundo-componentes: #d8cbae;
 	--cor-link-hover-fonte: #0a2b86;
     --cor-fonte: #080b38;
-    --cor: #5B1261;
+    --cor-geral-roxo: #5B1261;
+	--cor-geral-roxo-claro: #bb25c9;
 }
 
 main{

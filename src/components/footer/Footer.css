@@ -10,6 +10,6 @@
 }
 
 .rodape--link:hover {
-    text-shadow: 1px 1px var(--cor-link-hover-sombra);
+    text-shadow: 1px 1px var(--cor-hover-sombra);
     color: var(--cor-link-hover-fonte);
 }

@@ -1,0 +1,13 @@
+.info__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.input__info--player {
+    border: 2px solid var(--cor-geral-roxo);
+    border-radius: 5px;
+    padding: 0.2em;
+}
