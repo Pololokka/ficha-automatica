@@ -6,6 +6,26 @@ import PrintaImagem from './components/image/Image';
 import Informacoes from './components/info geral/InfoGeral';
 import ContainerGrande from './components/info geral containerG/InfoGeralContainG';
 import ContainerPequeno from './components/info geral containerP/InfoGeralContainP';
+import Atributo from './components/atributos/Atributos';
+
+const carisma = [
+  {
+      id : 14,
+      habilidade : "Atuação"
+  },
+  {
+      id : 15,
+      habilidade : "Enganação"
+  },
+  {
+      id : 16,
+      habilidade : "intimidação"
+  },
+  {
+      id : 17,
+      habilidade : "Persuasão"
+  }
+]
 
 function App() {
   return (
@@ -27,6 +47,13 @@ function App() {
           <Informacoes name="Arquétipo"/>
         </ContainerPequeno>
       </ContainerGrande>
+      <ContainerPequeno>
+        <Atributo stat={carisma}/>
+        <Atributo />
+        <Atributo />
+        <Atributo />
+        <Atributo />
+      </ContainerPequeno>
       <Footer />
     </div>
   );

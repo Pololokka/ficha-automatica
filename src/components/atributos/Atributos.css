@@ -1,0 +1,40 @@
+.atributo__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo-componentes);
+    border: 2px solid var(--cor-geral-roxo);
+    border-radius: 10px;
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 15%;
+    gap: 0.5em;
+}
+
+.atributo__nome {
+    text-transform: capitalize;
+}
+
+.valor__atributo {
+    border: 2px solid var(--cor-geral-roxo);
+    border-radius: 5px;
+    padding: 0.2em;
+    width: 20%;
+}
+
+.skill__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.25em;
+    border: 2px solid var(--cor-geral-roxo);
+    border-radius: 10px;
+    padding: 0.5em;
+    gap: 0.5em;
+}
+
+.skill__item--container {
+    display: flex;
+    gap: 0.25em;
+}
