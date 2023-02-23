@@ -1,146 +1,62 @@
-import './Atributos.css'
+import './Atributos.css';
+import { atributos } from "../../data/atributos";
+import { useState } from 'react';
 
 const Atributo = ({stat}) => {
-    console.log(stat)
+    const atributosPorStatus = atributos[stat];
 
-    const forca = [
-        {
-            id : 0,
-            habilidade : "Atletismo"
-        }
-    ]
+    const [atrBonus, setNovoAtr] = useState(0)
+    const [proficiencia, setNovaProf] = useState(0)
+    const [expertise, setNovaExper] = useState(0)
 
-    const destreza = [
-        {
-            id : 1,
-            habilidade : "Acrobacia"
-        },
-        {
-            id : 2,
-            habilidade : "Furtividade"
-        },
-        {
-            id : 3,
-            habilidade : "Prestidigitação"
-        }
-    ]
 
-    const inteligencia = [
-        {
-            id : 4,
-            habilidade : "Arcanismo"
-        },
-        {
-            id : 5,
-            habilidade : "História"
-        },
-        {
-            id : 6,
-            habilidade : "Investigação"
-        },
-        {
-            id : 7,
-            habilidade : "Natureza"
-        },
-        {
-            id : 8,
-            habilidade : "Religião"
-        }
-    ]
+    const calculaAtr = () => {
+        const atributo = document.querySelector("[data-atributo]").value;
+        const bonusAtributo = Math.floor(atributo/2)-5
 
-    const sabedoria = [
-        {
-            id : 9,
-            habilidade : "Adestrar Animais"
-        },
-        {
-            id : 10,
-            habilidade : "Intuição"
-        },
-        {
-            id : 11,
-            habilidade : "Medicina"
-        },
-        {
-            id : 12,
-            habilidade : "Percepção"
-        },
-        {
-            id : 13,
-            habilidade : "Sobrevivência"
-        }
-    ]
+        const nivel = document.querySelector("[data-nivel]").value;
+        const prof = 1 + Math.ceil(nivel/4);
+        const profFinal = bonusAtributo + prof;
 
-    const carisma = [
-        {
-            id : 14,
-            habilidade : "Atuação"
-        },
-        {
-            id : 15,
-            habilidade : "Enganação"
-        },
-        {
-            id : 16,
-            habilidade : "intimidação"
-        },
-        {
-            id : 17,
-            habilidade : "Persuasão"
-        }
-    ]
-    
+        const expertise = bonusAtributo + (prof * 2);
+
+        setNovoAtr(bonusAtributo);
+        setNovaProf(profFinal)
+        setNovaExper(expertise)
+    } 
 
     return (
         <div className="atributo__container">
             <label htmlFor="valor-atributo" className='texto atributo__nome'>{stat}</label>
-            <input type="number" name="valor-atributo" className='texto valor__atributo' id="valor-atributo" data-atributo />
-            <p className="texto atributo__bonus">+5</p>
+            <input onChange={calculaAtr} type="number" name="valor-atributo" className='texto valor__atributo' id="valor-atributo" data-atributo />
+            <p className="texto atributo__bonus">{atrBonus}</p>
+
+            <p className="texto skill__bonus">Proficiência: {proficiencia}</p>
+            <p className="texto skill__valor">Expertise: {expertise}</p>
+
+            <div className="skill__container">
+                <label htmlFor="save" className='texto'>Saving Throw </label>
+                <input type="checkbox" name="save" id="save" />
+            </div> 
                 
             
-                {stat.map(item => {
-                    return(
-                        <div key={item.id} className="skill__container">
-                            <p className="texto skill__nome">{item.habilidade}</p>
+            {atributosPorStatus?.map((item) => {
+                return (
+                    <div key={item.id} className="skill__container">
+                        <p className="texto skill__nome">{item.habilidade}</p>
 
-                            <div className="skill__item--container">
-                                <label htmlFor="prof" className='texto'>Proficiência</label>
-                                <input type="checkbox" name="prof" id="prof" data-prof/>
-                            </div>
-
-                            <div className="skill__item--container">
-                                <label htmlFor="exper" className='texto'>Expertise</label>
-                                <input type="checkbox" name="exper" id="exper" data-exper/>
-                            </div>
-
-                            <div className="skill__item--container">
-                                <p className="texto skill__bonus">Bônus: </p>
-                                <p className="texto skill__valor">+5</p>
-                            </div>
+                        <div className="skill__item--container">
+                        <label htmlFor="prof" className="texto">Proficiência</label>
+                        <input type="checkbox" name="prof" id="prof" data-prof />
                         </div>
-                    )
-                })}
-            
-            
-            {/* <div className="skill__container">
-                <p className="texto skill__nome">Atletismo</p>
 
-                <div className="skill__item--container">
-                    <label htmlFor="prof" className='texto'>Proficiência</label>
-                    <input type="checkbox" name="prof" id="prof" data-prof/>
-                </div>
-
-                <div className="skill__item--container">
-                    <label htmlFor="exper" className='texto'>Expertise</label>
-                    <input type="checkbox" name="exper" id="exper" data-exper/>
-                </div>
-                
-                <div className="skill__item--container">
-                    <p className="texto skill__bonus">Bônus: </p>
-                    <p className="texto skill__valor">+5</p>
-                </div>
-                
-            </div>      */}
+                        <div className="skill__item--container">
+                        <label htmlFor="exper" className="texto">Expertise</label>
+                        <input type="checkbox" name="exper" id="exper" data-exper />
+                        </div>
+                    </div>
+                );
+            })}
         </div>
     )
 }

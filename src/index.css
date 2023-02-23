@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.atrbiutos__container {
+.geral__container {
   display: flex;
     justify-content: center;
     align-items: flex-start;

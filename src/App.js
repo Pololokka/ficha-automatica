@@ -7,16 +7,12 @@ import PrintaImagem from './components/image/Image';
 import Informacoes from './components/info geral/InfoGeral';
 
 import Bonus from './components/nível/Nivel';
+import Vida from './components/hp/Vida';
 
 import ContainerGrande from './components/info geral containerG/InfoGeralContainG';
 import ContainerPequeno from './components/info geral containerP/InfoGeralContainP';
 
-import AtributoForça from './components/atributos/AtributosForca';
-import AtributoDestreza from './components/atributos/AtributoDestreza';
-import AtributoConstituicao from './components/atributos/AtributoConstituicao';
-import AtributoInteligencia from './components/atributos/AtributoInteligencia';
-import AtributoSabedoria from './components/atributos/AtributoSabedoria';
-import AtributoCarisma from './components/atributos/AtributoCarisma';
+import Atributo from './components/atributos/Atributos';
 
 function App() {
   return (
@@ -42,14 +38,17 @@ function App() {
       </ContainerGrande>
 
       <Bonus />
+      <div className='geral__container'>
+        <Vida />
+      </div>
       
-      <div className="atrbiutos__container">
-        <AtributoForça />
-        <AtributoDestreza />
-        <AtributoConstituicao />
-        <AtributoInteligencia />
-        <AtributoSabedoria />
-        <AtributoCarisma />
+      <div className="geral__container">
+        <Atributo stat={"str"} />
+        <Atributo stat={"dex"} />
+        <Atributo stat={"con"} />
+        <Atributo stat={"int"} />
+        <Atributo stat={"wis"} />
+        <Atributo stat={"cha"} />
       </div>
       
       <Footer />
