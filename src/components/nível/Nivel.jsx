@@ -23,7 +23,7 @@ const Bonus = () => {
                 <input onChange={mudaBonus} type="number" name="lvl" id="lvl" min="1" className='texto nivel__input--player' data-nivel />
             </div>
             
-            <p className='texto' data-bonus={prof}>Bônus de Proficiência: {prof}</p>
+            <p className='texto' data-bonus={prof}>Bônus de Proficiência: +{prof}</p>
         </div>
     );
 }
