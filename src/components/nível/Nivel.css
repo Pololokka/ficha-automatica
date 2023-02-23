@@ -1,0 +1,20 @@
+.nivel__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-fundo-componentes);
+    border: 2px solid var(--cor-geral-roxo);
+    background-color: var(--cor-fundo-componentes);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    gap: 0.5em;
+}
+
+.nivel__input--player {
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 30%;
+    border: 2px solid var(--cor-geral-roxo);
+    border-radius: 5px;
+}

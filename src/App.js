@@ -2,36 +2,29 @@ import './App.css';
 
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+
 import PrintaImagem from './components/image/Image';
 import Informacoes from './components/info geral/InfoGeral';
+
+import Bonus from './components/nível/Nivel';
+
 import ContainerGrande from './components/info geral containerG/InfoGeralContainG';
 import ContainerPequeno from './components/info geral containerP/InfoGeralContainP';
-import Atributo from './components/atributos/Atributos';
 
-const carisma = [
-  {
-      id : 14,
-      habilidade : "Atuação"
-  },
-  {
-      id : 15,
-      habilidade : "Enganação"
-  },
-  {
-      id : 16,
-      habilidade : "intimidação"
-  },
-  {
-      id : 17,
-      habilidade : "Persuasão"
-  }
-]
+import AtributoForça from './components/atributos/AtributosForca';
+import AtributoDestreza from './components/atributos/AtributoDestreza';
+import AtributoConstituicao from './components/atributos/AtributoConstituicao';
+import AtributoInteligencia from './components/atributos/AtributoInteligencia';
+import AtributoSabedoria from './components/atributos/AtributoSabedoria';
+import AtributoCarisma from './components/atributos/AtributoCarisma';
 
 function App() {
   return (
     <div className="App">
       <Header />
+      
       <PrintaImagem />
+      
       <ContainerGrande>
         <h2 className="subtitulo">Informações Gerais</h2>
         <ContainerPequeno>
@@ -47,13 +40,18 @@ function App() {
           <Informacoes name="Arquétipo"/>
         </ContainerPequeno>
       </ContainerGrande>
-      <ContainerPequeno>
-        <Atributo stat={carisma}/>
-        <Atributo />
-        <Atributo />
-        <Atributo />
-        <Atributo />
-      </ContainerPequeno>
+
+      <Bonus />
+      
+      <div className="atrbiutos__container">
+        <AtributoForça />
+        <AtributoDestreza />
+        <AtributoConstituicao />
+        <AtributoInteligencia />
+        <AtributoSabedoria />
+        <AtributoCarisma />
+      </div>
+      
       <Footer />
     </div>
   );

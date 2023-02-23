@@ -6,9 +6,9 @@
     background-color: var(--cor-fundo-componentes);
     border: 2px solid var(--cor-geral-roxo);
     border-radius: 10px;
-    padding: 0.5em;
+    padding: 0.5em 0;
     margin: 0.5em;
-    width: 15%;
+    width: 14%;
     gap: 0.5em;
 }
 

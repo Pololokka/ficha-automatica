@@ -98,7 +98,7 @@ const Atributo = ({stat}) => {
             <p className="texto atributo__bonus">+5</p>
                 
             
-                {forca.map(item => {
+                {stat.map(item => {
                     return(
                         <div key={item.id} className="skill__container">
                             <p className="texto skill__nome">{item.habilidade}</p>
