@@ -47,3 +47,9 @@ code {
   font-weight: var(--fonte-peso-subtitulo);
   transform: scale(1.1);
 }
+
+.botao__geral:active {
+  text-shadow: 1px 1px var(--cor-hover-sombra);
+  font-weight: var(--fonte-peso-subtitulo);
+  transform: scale(0.9);
+}

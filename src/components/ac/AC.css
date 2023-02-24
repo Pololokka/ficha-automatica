@@ -1,4 +1,4 @@
-.hit-d__container {
+.armadura__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,10 +7,21 @@
     gap: 0.25em;
 }
 
-.hit-d__input {
+.armadura__inputs {
+    text-align: center;
+}
+
+.armadura__valor--input {
     padding: 0.5em;
     margin: 0.5em;
-    width: 20%;
+    width: 2.5%;
+    border: 2px solid var(--cor-geral-roxo);
+    border-radius: 5px;
+}
+
+.armadura__tipo {
+    padding: 0.5em;
+    margin: 0.5em;
     border: 2px solid var(--cor-geral-roxo);
     border-radius: 5px;
 }
