@@ -8,6 +8,8 @@ import Informacoes from './components/info geral/InfoGeral';
 
 import Bonus from './components/nível/Nivel';
 import Vida from './components/hp/Vida';
+import HitDice from './components/hit dice/HitDice';
+import Ac from './components/ac/AC';
 
 import ContainerGrande from './components/info geral containerG/InfoGeralContainG';
 import ContainerPequeno from './components/info geral containerP/InfoGeralContainP';
@@ -38,8 +40,18 @@ function App() {
       </ContainerGrande>
 
       <Bonus />
-      <div className='geral__container'>
+      <div className='geral__container-fundo'>
+        <p className="subtitulo">HP</p>
         <Vida />
+        <p className="subtitulo">Hit Dice</p>
+        <div className="geral__container">
+          <HitDice dado={6}/>
+          <HitDice dado={8}/>
+          <HitDice dado={10}/>
+          <HitDice dado={12}/>
+        </div>
+        <p className="subtitulo">AC</p>
+        <Ac />
       </div>
       
       <div className="geral__container">

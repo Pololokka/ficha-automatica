@@ -5,13 +5,15 @@ import { useState } from 'react';
 const Atributo = ({stat}) => {
     const atributosPorStatus = atributos[stat];
 
+
     const [atrBonus, setNovoAtr] = useState(0)
     const [proficiencia, setNovaProf] = useState(0)
     const [expertise, setNovaExper] = useState(0)
 
 
     const calculaAtr = () => {
-        const atributo = document.querySelector("[data-atributo]").value;
+        const atributo = document.getElementById(stat).value;
+
         const bonusAtributo = Math.floor(atributo/2)-5
 
         const nivel = document.querySelector("[data-nivel]").value;
@@ -28,7 +30,7 @@ const Atributo = ({stat}) => {
     return (
         <div className="atributo__container">
             <label htmlFor="valor-atributo" className='texto atributo__nome'>{stat}</label>
-            <input onChange={calculaAtr} type="number" name="valor-atributo" className='texto valor__atributo' id="valor-atributo" data-atributo />
+            <input onChange={calculaAtr} type="number" name="valor-atributo" className='texto valor__atributo' id={stat} data-atributo />
             <p className="texto atributo__bonus">{atrBonus}</p>
 
             <p className="texto skill__bonus">Proficiência: {proficiencia}</p>

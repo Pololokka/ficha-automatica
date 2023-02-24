@@ -14,7 +14,7 @@ const PrintaImagem = () => {
             <div className='interacao__container'>
                 <label htmlFor="link-foto" className='texto'>Link da sua foto:</label>
                 <input type="text" name="link-foto" className='texto foto__input' id="linkFoto" data-foto />
-                <button onClick={mudaFoto} className="texto botao__foto">Carregar</button>
+                <button onClick={mudaFoto} className="texto botao__geral">Carregar</button>
             </div>
             <img src={imagemPlayer} alt="Imagem do personagem" className='imagem__container'/>
         </div>

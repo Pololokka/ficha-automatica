@@ -14,7 +14,42 @@ code {
 
 .geral__container {
   display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.geral__container-fundo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--cor-fundo-componentes);
+  border: 2px solid var(--cor-geral-roxo);
+  background-color: var(--cor-fundo-componentes);
+  margin: 1em;
+  padding: 1em;
+  width: auto;
+  border-radius: 10px;
+}
+
+.botao__geral {
+  background-color: var(--cor-geral-roxo-claro);
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.botao__geral:hover {
+  text-shadow: 1px 1px var(--cor-hover-sombra);
+  font-weight: var(--fonte-peso-subtitulo);
+  transform: scale(1.1);
+}
+
+.botao__geral:active {
+  text-shadow: 1px 1px var(--cor-hover-sombra);
+  font-weight: var(--fonte-peso-subtitulo);
+  transform: scale(0.9);
 }
