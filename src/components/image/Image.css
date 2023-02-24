@@ -23,20 +23,6 @@
     border-radius: 5px;
 }
 
-.botao__foto {
-    background-color: var(--cor-geral-roxo-claro);
-    padding: 0.5em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 200ms;
-}
-
-.botao__foto:hover {
-    text-shadow: 1px 1px var(--cor-hover-sombra);
-    font-weight: var(--fonte-peso-subtitulo);
-    transform: scale(1.1);
-}
-
 .imagem__container {
     width: 40%;
     padding: 0.5em;

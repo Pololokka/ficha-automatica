@@ -12,8 +12,6 @@ const Vida = () => {
     
     return (
         <div className="vida__container">
-            <p className="subtitulo">HP</p>
-
             <div className="input__container">
                 <div className="vida__input">
                     <label htmlFor="hp-total" className='texto' >Vida Total: </label>
@@ -47,7 +45,7 @@ const Vida = () => {
                         <input type="checkbox" name="" />
                     </div>
 
-                    <button onClick={fazTeste} className="texto botao__teste">Fazer Teste</button>
+                    <button onClick={fazTeste} className="texto botao__geral">Fazer Teste</button>
                     <p className="texto">Valor: {deathSave}</p>            
                 </div>
             </div>
