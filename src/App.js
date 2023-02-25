@@ -75,7 +75,7 @@ function App() {
       </div>
 
       <div className="geral__container-fundo">
-        <h2 className="subtitulo">Itens</h2>
+        <h2 className="subtitulo">Itens Principais(máximo de 10)</h2>
         <Equipamento />
       </div>
       

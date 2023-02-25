@@ -44,12 +44,21 @@ const Atributo = ({stat}) => {
 
         let dado = Math.ceil(Math.random() * 20);
         let teste = dado + bonusAtributo;
+        if(teste < 1) {
+            teste = 1;
+        }
         setNovoTeste(teste);
         
         teste = dado + profFinal;
+        if(teste < 1) {
+            teste = 1;
+        }
         setNovoTesteProf(teste)
         
         teste = dado + expertise;
+        if(teste < 1) {
+            teste = 1;
+        }
         setNovoTesteExper(teste)
     } 
 
