@@ -14,9 +14,9 @@ const HitDice = ({dado}) => {
         <div className="hit-d__container">
                 <p className="texto">D{dado}</p>
                 <label htmlFor="hit-d" className='texto' >Total: </label>
-                <input type="number" name="hit-d" className='texto hit-d__input' />
+                <input type="number" name="hit-d" className='texto hit-d__input geral__input' />
                 <label htmlFor="hit-d" className='texto' >Usado: </label>
-                <input type="number" name="hit-d" className='texto hit-d__input' />
+                <input type="number" name="hit-d" className='texto hit-d__input geral__input' />
                 <button onClick={fazHitdice} className="texto botao__geral">Rolar Hit Die</button>
                 <p className="texto">Resultado: {hitDice}</p>
         </div>

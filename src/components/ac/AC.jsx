@@ -62,19 +62,19 @@ const Ac = ({stat}) => {
                 </select>
 
                 <label className='texto' htmlFor="ac-base">AC Base:</label>
-                <input type="number" name="ac-base" className='texto armadura__valor--input' id="ac-base" data-ac-base/>
+                <input type="number" name="ac-base" className='texto armadura__valor--input geral__input' id="ac-base" data-ac-base/>
 
                 <label className='texto' htmlFor="stealth-des">Desvantagem em Stealth: </label>
                 <input type="checkbox" name="stealth-des" id="stealth-des" />
 
                 <label className='texto' htmlFor="bonus-mag">Bonus Mágico: </label>
-                <input type="number" name="bonus-mag" className='texto armadura__valor--input' id="bonus-mag" data-ac-mag/>
+                <input type="number" name="bonus-mag" className='texto armadura__valor--input geral__input' id="bonus-mag" data-ac-mag/>
 
                 <label className='texto' htmlFor="bonus-ext">Bonus Extra: </label>
-                <input type="number" name="bonus-ext" className='texto armadura__valor--input' id="bonus-ext" data-ac-ext/>
+                <input type="number" name="bonus-ext" className='texto armadura__valor--input geral__input' id="bonus-ext" data-ac-ext/>
 
                 <label className='texto' htmlFor="escudo">Escudo: </label>
-                <input type="number" name="escudo" className='texto armadura__valor--input' id="escudo" data-ac-esc/>
+                <input type="number" name="escudo" className='texto armadura__valor--input geral__input' id="escudo" data-ac-esc/>
             </div>
 
             <button onClick={fazAC} className="texto botao__geral">Calcular</button>

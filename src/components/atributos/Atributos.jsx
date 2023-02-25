@@ -56,7 +56,7 @@ const Atributo = ({stat}) => {
     return (
         <div className="atributo__container">
             <label htmlFor="valor-atributo" className='texto atributo__nome'>{stat}</label>
-            <input onChange={calculaAtr} type="number" name="valor-atributo" className='texto valor__atributo' id={stat} data-atributo />
+            <input onChange={calculaAtr} type="number" name="valor-atributo" className='texto valor__atributo geral__input' id={stat} data-atributo />
             <p className="texto atributo__bonus" data-bonus>{atrBonus}</p>
 
             <p className="texto skill__bonus">Proficiência: {proficiencia}</p>

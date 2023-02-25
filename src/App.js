@@ -16,6 +16,10 @@ import ContainerPequeno from './components/info geral containerP/InfoGeralContai
 
 import Atributo from './components/atributos/Atributos';
 
+import Proficiencias from './components/proficiencias/Proficiencias';
+
+import Equipamento from './components/equipamento/Equipamento';
+
 function App() {
   return (
     <div className="App">
@@ -41,7 +45,7 @@ function App() {
 
       <Bonus />
       <div className='geral__container-fundo'>
-        <p className="subtitulo">HP</p>
+        <h2 className="subtitulo">HP</h2>
         <Vida />
         <p className="subtitulo">Hit Dice</p>
         <div className="geral__container">
@@ -61,6 +65,18 @@ function App() {
         <Atributo stat={"int"} />
         <Atributo stat={"wis"} />
         <Atributo stat={"cha"} />
+      </div>
+
+      <div className="geral__container-fundo">
+        <h2 className="subtitulo">Proficiências</h2>
+        <Proficiencias tipoProf={"Escudos e Armaduras"} />
+        <Proficiencias tipoProf={"Armas"} />
+        <Proficiencias tipoProf={"Ferramentas e Instrumentos"} />
+      </div>
+
+      <div className="geral__container-fundo">
+        <h2 className="subtitulo">Itens</h2>
+        <Equipamento />
       </div>
       
       <Footer />
