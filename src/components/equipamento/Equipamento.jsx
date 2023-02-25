@@ -19,7 +19,7 @@ const Equipamento = () => {
                         <label htmlFor="peso">Peso:</label>
                         <input type="text" class='geral__input input__equip' name="peso" />
 
-                        <button class="texto botao__geral" data-remove="${id}">Remover</button>
+                        <button class="texto botao__geral botao__geral-remove" data-remove="${id}">Remover</button>
                     </li>
                 `
              count++;
@@ -33,7 +33,6 @@ const Equipamento = () => {
                 const itemRemover = document.getElementById(achaID);
                 itemRemover.remove();
                 count--;
-                console.log(itemRemover);
             })
         })
     }

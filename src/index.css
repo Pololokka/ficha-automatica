@@ -42,13 +42,21 @@ code {
   transition: 200ms;
 }
 
-.botao__geral:hover {
+.botao__geral-remove {
+  background-color: brown;
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.botao__geral:hover, .botao__geral-remove:hover {
   text-shadow: 1px 1px var(--cor-hover-sombra);
   font-weight: var(--fonte-peso-subtitulo);
   transform: scale(1.1);
 }
 
-.botao__geral:active {
+.botao__geral:active, .botao__geral-remove:active {
   text-shadow: 1px 1px var(--cor-hover-sombra);
   font-weight: var(--fonte-peso-subtitulo);
   transform: scale(0.9);
