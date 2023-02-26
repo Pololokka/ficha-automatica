@@ -12,11 +12,7 @@
 }
 
 .armadura__valor--input {
-    padding: 0.5em;
-    margin: 0.5em;
     width: 2.5%;
-    border: 2px solid var(--cor-geral-roxo);
-    border-radius: 5px;
 }
 
 .armadura__tipo {

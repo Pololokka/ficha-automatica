@@ -16,6 +16,15 @@ import ContainerPequeno from './components/info geral containerP/InfoGeralContai
 
 import Atributo from './components/atributos/Atributos';
 
+import Proficiencias from './components/proficiencias/Proficiencias';
+
+import Ataque from './components/ataque/Ataque';
+
+import MagiasPreparadas from './components/magias/preparadas/MagiasPreparadas';
+import CabecalhoMagPrep from './components/magias/cabecalho magias preparadas/CabecalhoMagPrep';
+
+import Equipamento from './components/equipamento/Equipamento';
+
 function App() {
   return (
     <div className="App">
@@ -41,7 +50,7 @@ function App() {
 
       <Bonus />
       <div className='geral__container-fundo'>
-        <p className="subtitulo">HP</p>
+        <h2 className="subtitulo">HP</h2>
         <Vida />
         <p className="subtitulo">Hit Dice</p>
         <div className="geral__container">
@@ -61,6 +70,48 @@ function App() {
         <Atributo stat={"int"} />
         <Atributo stat={"wis"} />
         <Atributo stat={"cha"} />
+      </div>
+
+      <div className="geral__container-fundo">
+        <h2 className="subtitulo">Proficiências</h2>
+        <Proficiencias tipoProf={"Escudos e Armaduras"} />
+        <Proficiencias tipoProf={"Armas"} />
+        <Proficiencias tipoProf={"Ferramentas e Instrumentos"} />
+      </div>
+
+      <div className="geral__container-fundo">
+        <h2 className="subtitulo">Ataques(máximo de 10)</h2>
+        <Ataque />
+      </div>
+
+      <div className="geral__container-fundo">
+        <h2 className="subtitulo">Itens Principais(máximo de 10)</h2>
+        <Equipamento />
+      </div>
+
+      <div className="geral__container-fundo">
+        <h2 className="subtitulo">Magias Preparadas</h2>
+        <CabecalhoMagPrep />
+        <h2 className="subtitulo">Cantrip</h2>
+        <MagiasPreparadas />
+        <h2 className="subtitulo">Nivel 1</h2>
+        <MagiasPreparadas />
+        <h2 className="subtitulo">Nivel 2</h2>
+        <MagiasPreparadas />
+        <h2 className="subtitulo">Nivel 3</h2>
+        <MagiasPreparadas />
+        <h2 className="subtitulo">Nivel 4</h2>
+        <MagiasPreparadas />
+        <h2 className="subtitulo">Nivel 5</h2>
+        <MagiasPreparadas />
+        <h2 className="subtitulo">Nivel 6</h2>
+        <MagiasPreparadas />
+        <h2 className="subtitulo">Nivel 7</h2>
+        <MagiasPreparadas />
+        <h2 className="subtitulo">Nivel 8</h2>
+        <MagiasPreparadas />
+        <h2 className="subtitulo">Nivel 9</h2>
+        <MagiasPreparadas />
       </div>
       
       <Footer />

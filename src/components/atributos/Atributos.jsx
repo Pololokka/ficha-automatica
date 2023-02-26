@@ -10,6 +10,10 @@ const Atributo = ({stat}) => {
     const [proficiencia, setNovaProf] = useState(0)
     const [expertise, setNovaExper] = useState(0)
 
+    const [testeNormal, setNovoTeste] = useState(0)
+    const [testeProf, setNovoTesteProf] = useState(0)
+    const [testeExper, setNovoTesteExper] = useState(0)
+
 
     const calculaAtr = () => {
         const atributo = document.getElementById(stat).value;
@@ -27,11 +31,42 @@ const Atributo = ({stat}) => {
         setNovaExper(expertise)
     } 
 
+    const testaSkill = () => {
+        const atributo = document.getElementById(stat).value;
+
+        const bonusAtributo = Math.floor(atributo/2)-5
+
+        const nivel = document.querySelector("[data-nivel]").value;
+        const prof = 1 + Math.ceil(nivel/4);
+        const profFinal = bonusAtributo + prof;
+
+        const expertise = bonusAtributo + (prof * 2);
+
+        let dado = Math.ceil(Math.random() * 20);
+        let teste = dado + bonusAtributo;
+        if(teste < 1) {
+            teste = 1;
+        }
+        setNovoTeste(teste);
+        
+        teste = dado + profFinal;
+        if(teste < 1) {
+            teste = 1;
+        }
+        setNovoTesteProf(teste)
+        
+        teste = dado + expertise;
+        if(teste < 1) {
+            teste = 1;
+        }
+        setNovoTesteExper(teste)
+    } 
+
     return (
         <div className="atributo__container">
             <label htmlFor="valor-atributo" className='texto atributo__nome'>{stat}</label>
-            <input onChange={calculaAtr} type="number" name="valor-atributo" className='texto valor__atributo' id={stat} data-atributo />
-            <p className="texto atributo__bonus">{atrBonus}</p>
+            <input onChange={calculaAtr} type="number" name="valor-atributo" className='texto valor__atributo geral__input' id={stat} data-atributo />
+            <p className="texto atributo__bonus" data-bonus>{atrBonus}</p>
 
             <p className="texto skill__bonus">Proficiência: {proficiencia}</p>
             <p className="texto skill__valor">Expertise: {expertise}</p>
@@ -40,6 +75,14 @@ const Atributo = ({stat}) => {
                 <label htmlFor="save" className='texto'>Saving Throw </label>
                 <input type="checkbox" name="save" id="save" />
             </div> 
+
+            <div className="skill__container">
+                <button onClick={testaSkill} className="texto botao__geral">Fazer Teste</button>
+                <p className="texto">Normal: {testeNormal}</p>
+                <p className="texto">Proficiência: {testeProf}</p>
+                <p className="texto">Expertise: {testeExper}</p>
+            </div>
+            
                 
             
             {atributosPorStatus?.map((item) => {

@@ -1,0 +1,26 @@
+.mag-prep__container, .ul-mag-prep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.mag-prep__input {
+    width: 10%;
+}
+
+.mag-prep__nome {
+    width: 20%;
+}
+
+.mag-prep__notas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__mag-prep {
+    margin: 0.5em;
+}

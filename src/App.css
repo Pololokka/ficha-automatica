@@ -120,6 +120,7 @@ main{
     font-family: var(--fonte);
     font-weight: var(--fonte-peso-subtitulo);
     font-size: var(--fonte-tamanho-subtitulo);
+	padding: 0.2em;
 }
 
 .texto{

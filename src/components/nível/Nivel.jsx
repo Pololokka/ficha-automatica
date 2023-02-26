@@ -15,12 +15,12 @@ const Bonus = () => {
         <div className="nivel__container">
             <div className="nivel__input">
                 <label htmlFor="exp" className='texto' >Experiência</label>
-                <input type="number" name="exp" id="exp" className='texto nivel__input--player' />
+                <input type="number" name="exp" id="exp" className='texto nivel__input--player geral__input' />
             </div>
             
             <div className="nivel__input">
                 <label htmlFor="lvl" className='texto' >Nível</label>
-                <input onChange={mudaBonus} type="number" name="lvl" id="lvl" min="1" className='texto nivel__input--player' data-nivel />
+                <input onChange={mudaBonus} type="number" name="lvl" id="lvl" min="1" className='texto nivel__input--player geral__input' data-nivel />
             </div>
             
             <p className='texto' data-bonus={prof}>Bônus de Proficiência: +{prof}</p>
