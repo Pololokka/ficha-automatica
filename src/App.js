@@ -21,6 +21,7 @@ import Proficiencias from './components/proficiencias/Proficiencias';
 import Ataque from './components/ataque/Ataque';
 
 import MagiasPreparadas from './components/magias/preparadas/MagiasPreparadas';
+import CabecalhoMagPrep from './components/magias/cabecalho magias preparadas/CabecalhoMagPrep';
 
 import Equipamento from './components/equipamento/Equipamento';
 
@@ -90,6 +91,7 @@ function App() {
 
       <div className="geral__container-fundo">
         <h2 className="subtitulo">Magias Preparadas</h2>
+        <CabecalhoMagPrep />
         <h2 className="subtitulo">Cantrip</h2>
         <MagiasPreparadas />
         <h2 className="subtitulo">Nivel 1</h2>

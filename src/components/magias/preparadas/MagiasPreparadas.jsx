@@ -4,7 +4,7 @@ const MagiasPreparadas = () => {
     let idMagPrep = 0;
     
     const adicionaMagPrep = () => {
-        const magPrepLista = document.querySelector("[data-magPrep]");
+        const magPrepLista = document.querySelector("[data-mag-prep]");
         
         magPrepLista.innerHTML += `
                 <li id="magPrep-${idMagPrep}">
@@ -64,7 +64,7 @@ const MagiasPreparadas = () => {
     
     return (
         <div className="mag-prep__container">
-            <ul className='texto ul-mag-prep' data-magPrep>
+            <ul className='texto ul-mag-prep' data-mag-prep>
 
             </ul>
 
