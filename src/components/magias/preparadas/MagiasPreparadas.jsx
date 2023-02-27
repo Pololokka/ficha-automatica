@@ -22,10 +22,16 @@ const MagiasPreparadas = () => {
                         <input type="text" class="texto geral__input mag-prep__input" name="magPrep-dur" />
                             
                         <label htmlFor="magPrep-tempo" class='texto'>Tempo de Cast: </label>
-                        <input type="text" class="texto geral__input mag-prep__input" name="magPrep-tempo" />
+                        <input type="text" class="texto geral__input mag-prep__input--menor" name="magPrep-tempo" />
+
+                        <label htmlFor="magPrep-tempo" class='texto'>Componentes: </label>
+                        <input type="text" class="texto geral__input mag-prep__input--menor" name="magPrep-tempo" />
                     </div>
 
                     <div class="mag-prep__divisor">
+                        <label htmlFor="magPrep-lvl" class='texto'>Nivel: </label>
+                        <input type="text" class="texto geral__input mag-prep__input" name="magPrep-lvl" />
+
                         <label htmlFor="magPrep-range" class='texto'>Range: </label>
                         <input type="text" class="texto geral__input mag-prep__input" name="magPrep-range" />  
                                 

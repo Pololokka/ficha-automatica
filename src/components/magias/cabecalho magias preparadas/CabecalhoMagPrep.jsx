@@ -54,7 +54,7 @@ const CabecalhoMagPrep = () => {
                 <p className="texto">Save DC: {saveDc}</p>
                 <p className="texto">Bônus de Ataque: {bonusMagAtk}</p>
 
-                <button onClick={fazContaMagPrep} className="texto botao__geral">Calcular</button>
+                <button onClick={fazContaMagPrep} className="texto botao__geral btn__cabecalho--mag-prep">Calcular</button>
             </div>
             
         </div>

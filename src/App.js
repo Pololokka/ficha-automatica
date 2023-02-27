@@ -25,6 +25,10 @@ import CabecalhoMagPrep from './components/magias/cabecalho magias preparadas/Ca
 
 import Equipamento from './components/equipamento/Equipamento';
 
+import Tesouros from './components/itens e tesouros/Tesouros';
+
+import MagiasGeral from './components/magias/geral/MagiasGeral';
+
 function App() {
   return (
     <div className="App">
@@ -92,26 +96,32 @@ function App() {
       <div className="geral__container-fundo">
         <h2 className="subtitulo">Magias Preparadas</h2>
         <CabecalhoMagPrep />
-        <h2 className="subtitulo">Cantrip</h2>
         <MagiasPreparadas />
-        <h2 className="subtitulo">Nivel 1</h2>
-        <MagiasPreparadas />
-        <h2 className="subtitulo">Nivel 2</h2>
-        <MagiasPreparadas />
-        <h2 className="subtitulo">Nivel 3</h2>
-        <MagiasPreparadas />
-        <h2 className="subtitulo">Nivel 4</h2>
-        <MagiasPreparadas />
-        <h2 className="subtitulo">Nivel 5</h2>
-        <MagiasPreparadas />
-        <h2 className="subtitulo">Nivel 6</h2>
-        <MagiasPreparadas />
-        <h2 className="subtitulo">Nivel 7</h2>
-        <MagiasPreparadas />
-        <h2 className="subtitulo">Nivel 8</h2>
-        <MagiasPreparadas />
-        <h2 className="subtitulo">Nivel 9</h2>
-        <MagiasPreparadas />
+      </div>
+
+      <div className="geral__container-fundo">
+        <h2 className="subtitulo">Personalidade(4)</h2>
+        <Equipamento />
+      </div>
+
+      <div className="geral__container-fundo">
+        <h2 className="subtitulo">Poderes e Habilidades(3)</h2>
+        <Equipamento />
+      </div>
+
+      <div className="geral__container-fundo">
+        <h2 className="subtitulo">Itens e Tesouros</h2>
+        <Tesouros />
+      </div>
+
+      <div className="geral__container-fundo">
+        <h2 className="subtitulo">Magias</h2>
+        <MagiasGeral />
+      </div>
+
+      <div className="geral__container-fundo">
+        <h2 className="subtitulo">Notas(5)</h2>
+        <Equipamento />
       </div>
       
       <Footer />
