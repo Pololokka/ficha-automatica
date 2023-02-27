@@ -1,0 +1,19 @@
+.tesouro__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tesouro__text-area {
+    max-width: 90%;
+}
+
+.texto__tesouro {
+    padding: 0.5em;
+}
+
+.dinheiro__input {
+    width: 5%;
+}

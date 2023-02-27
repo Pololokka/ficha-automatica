@@ -11,6 +11,10 @@
     width: 10%;
 }
 
+.mag-prep__input--menor {
+    width: 5%;
+}
+
 .mag-prep__nome {
     width: 20%;
 }
