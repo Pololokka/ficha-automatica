@@ -16,3 +16,9 @@
 .poder__remove {
     margin: 0.25em;
 }
+
+.poderes__textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

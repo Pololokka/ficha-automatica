@@ -1,7 +1,7 @@
 import './AC.css';
 import { useState } from 'react';
 
-const Ac = ({stat}) => {
+const Ac = () => {
     const [AcTotal, setNovaAc] = useState(0)
 
     const fazAC = () => {

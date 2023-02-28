@@ -12,7 +12,7 @@ const MagiasGeral = () => {
                         <input type="text" class='texto geral__input' name="mag-geral-nome" />
 
                         <label htmlFor="magGeral-lvl" class='texto'>Nivel: </label>
-                        <input type="text" class="texto geral__input mag-geral__input" name="magGeral-lvl" />
+                        <input type="number" class="texto geral__input mag-geral__input" name="magGeral-lvl" />
 
                         <label htmlFor="magGeral-notas" class='texto'>Notas: </label>
                         <textarea name="magGeral-notas" cols="30" rows="3" class='texto geral__input mag-geral__textarea'></textarea>
