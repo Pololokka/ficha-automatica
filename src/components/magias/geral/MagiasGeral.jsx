@@ -15,7 +15,7 @@ const MagiasGeral = () => {
                         <input type="text" class="texto geral__input mag-geral__input" name="magGeral-lvl" />
 
                         <label htmlFor="magGeral-notas" class='texto'>Notas: </label>
-                        <textarea name="magGeral-notas" cols="30" rows="3" class='texto geral__input'></textarea>
+                        <textarea name="magGeral-notas" cols="30" rows="3" class='texto geral__input mag-geral__textarea'></textarea>
 
                     <button class="texto botao__geral botao__geral-remove" data-remove-magGeral="${idMagGeral}">Remover</button>
                 </li>

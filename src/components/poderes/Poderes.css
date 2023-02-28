@@ -1,0 +1,18 @@
+.poder__container {
+    text-align: center;
+}
+
+.li__poder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poder__input--numero {
+    width: 5%;
+}
+
+.poder__remove {
+    margin: 0.25em;
+}

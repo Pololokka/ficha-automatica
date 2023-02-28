@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.mag-geral__textarea {
+    max-width: 40%;
+}
+
 .mag-geral__input {
     width: 5%;
 }

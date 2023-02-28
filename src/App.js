@@ -20,10 +20,12 @@ import Proficiencias from './components/proficiencias/Proficiencias';
 
 import Ataque from './components/ataque/Ataque';
 
+import Equipamento from './components/equipamento/Equipamento';
+
 import MagiasPreparadas from './components/magias/preparadas/MagiasPreparadas';
 import CabecalhoMagPrep from './components/magias/cabecalho magias preparadas/CabecalhoMagPrep';
 
-import Equipamento from './components/equipamento/Equipamento';
+import Poderes from './components/poderes/Poderes';
 
 import Tesouros from './components/itens e tesouros/Tesouros';
 
@@ -105,8 +107,8 @@ function App() {
       </div>
 
       <div className="geral__container-fundo">
-        <h2 className="subtitulo">Poderes e Habilidades(3)</h2>
-        <Equipamento />
+        <h2 className="subtitulo">Poderes e Habilidades</h2>
+        <Poderes />
       </div>
 
       <div className="geral__container-fundo">
