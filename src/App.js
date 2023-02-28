@@ -25,6 +25,8 @@ import Equipamento from './components/equipamento/Equipamento';
 import MagiasPreparadas from './components/magias/preparadas/MagiasPreparadas';
 import CabecalhoMagPrep from './components/magias/cabecalho magias preparadas/CabecalhoMagPrep';
 
+import Personalidade from './components/personalidade/Personalidade';
+
 import Poderes from './components/poderes/Poderes';
 
 import Tesouros from './components/itens e tesouros/Tesouros';
@@ -102,8 +104,8 @@ function App() {
       </div>
 
       <div className="geral__container-fundo">
-        <h2 className="subtitulo">Personalidade(4)</h2>
-        <Equipamento />
+        <h2 className="subtitulo">Personalidade</h2>
+        <Personalidade />
       </div>
 
       <div className="geral__container-fundo">
@@ -122,8 +124,8 @@ function App() {
       </div>
 
       <div className="geral__container-fundo">
-        <h2 className="subtitulo">Notas(5)</h2>
-        <Equipamento />
+        <h2 className="subtitulo">Notas</h2>
+        <textarea name="notas" className='texto geral__input notas__textarea' cols="90" rows="10"></textarea>
       </div>
       
       <Footer />

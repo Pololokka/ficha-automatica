@@ -1,0 +1,10 @@
+.carac-geral__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carac__textarea {
+    max-width: 90%;
+}
