@@ -133,3 +133,7 @@ main{
 .subtitulo {
     color: var(--cor-fonte);
 }
+
+.notas__textarea {
+	max-width: 90%;
+}

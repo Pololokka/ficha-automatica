@@ -20,10 +20,14 @@ import Proficiencias from './components/proficiencias/Proficiencias';
 
 import Ataque from './components/ataque/Ataque';
 
+import Equipamento from './components/equipamento/Equipamento';
+
 import MagiasPreparadas from './components/magias/preparadas/MagiasPreparadas';
 import CabecalhoMagPrep from './components/magias/cabecalho magias preparadas/CabecalhoMagPrep';
 
-import Equipamento from './components/equipamento/Equipamento';
+import Personalidade from './components/personalidade/Personalidade';
+
+import Poderes from './components/poderes/Poderes';
 
 import Tesouros from './components/itens e tesouros/Tesouros';
 
@@ -100,13 +104,13 @@ function App() {
       </div>
 
       <div className="geral__container-fundo">
-        <h2 className="subtitulo">Personalidade(4)</h2>
-        <Equipamento />
+        <h2 className="subtitulo">Personalidade</h2>
+        <Personalidade />
       </div>
 
       <div className="geral__container-fundo">
-        <h2 className="subtitulo">Poderes e Habilidades(3)</h2>
-        <Equipamento />
+        <h2 className="subtitulo">Poderes e Habilidades</h2>
+        <Poderes />
       </div>
 
       <div className="geral__container-fundo">
@@ -120,8 +124,8 @@ function App() {
       </div>
 
       <div className="geral__container-fundo">
-        <h2 className="subtitulo">Notas(5)</h2>
-        <Equipamento />
+        <h2 className="subtitulo">Notas</h2>
+        <textarea name="notas" className='texto geral__input notas__textarea' cols="90" rows="10"></textarea>
       </div>
       
       <Footer />
