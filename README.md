@@ -21,17 +21,17 @@ Você pode acessar esse projeto por [aqui!](https://character-cheat.netlify.app)
 Página onde o usuário pode inserir as informações de seu personagem, como nome, foto, características da personalidade, e etc.
 A página realiza cálculos com base nas informações inseridas pelo jogador, assim indicando seus bonus, realizando rolagens de ataque de dano, e indicando o spell save dc.
 
-[Campo de foto](https://cdn.discordapp.com/attachments/621499803884584998/1080111757378457691/image.png)
+![Campo de foto](https://cdn.discordapp.com/attachments/621499803884584998/1080111757378457691/image.png)
 
-[Campo de informações gerais](https://cdn.discordapp.com/attachments/621499803884584998/1080111758070521946/image.png)
+![Campo de informações gerais](https://cdn.discordapp.com/attachments/621499803884584998/1080111758070521946/image.png)
 
-[Campo de vida e AC](https://cdn.discordapp.com/attachments/621499803884584998/1080111758271840296/image.png)
+![Campo de vida e AC](https://cdn.discordapp.com/attachments/621499803884584998/1080111758271840296/image.png)
 
-[Campo de atributos](https://cdn.discordapp.com/attachments/621499803884584998/1080111758586421358/image.png)
+![Campo de atributos](https://cdn.discordapp.com/attachments/621499803884584998/1080111758586421358/image.png)
 
-[Campo de ataques](https://cdn.discordapp.com/attachments/621499803884584998/1080111758821294131/image.png)
+![Campo de ataques](https://cdn.discordapp.com/attachments/621499803884584998/1080111758821294131/image.png)
 
-[Campo de magias preparadas](https://cdn.discordapp.com/attachments/621499803884584998/1080111759102316554/image.png)
+![Campo de magias preparadas](https://cdn.discordapp.com/attachments/621499803884584998/1080111759102316554/image.png)
 
 ## Sobre
 
